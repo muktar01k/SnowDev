@@ -18,55 +18,56 @@ import { useState } from 'react'
 const Home = () => {
 
   const [Togglemodal, setTogglemodel] = useState(false)
-  const [Togglemodal2, setTogglemodel2] = useState (false)
+  const [Togglemodal2, setTogglemodel2] = useState(false)
 
 
   function ToggleWeb() {
     setTogglemodel(!Togglemodal)
   }
-  function Toggleweb2(){
+  function Toggleweb2() {
     setTogglemodel2(!Togglemodal2)
   }
 
   return (
     <div>
-      <div className=''>
-        <nav className=' flex pl-[5rem] w-full '>
+      <div className='bg-[blue]'>
+        <nav className=' flex pl-[5rem] w-full sm:gap-[6rem] '>
           <div className='w-[7rem] mt-[1rem] '>
             <img className='' src={Logo} alt="" />
           </div>
-          <div className='text-xl ml-[4rem] pt-[3rem] text-lg space-x-8 text-[grey]'>
-            <a class="" href="">Home</a>
+          <div className='text-xl ml-[5rem] pt-[3rem] text-lg space-x-8 text-[grey] sm:flex sm:flex-col sm:gap-[1rem]'>
+          
             <a href="">About</a>
             <a href="">Testimonals</a>
             <a href="">Portfolio</a>
             <a href="">Sevice</a>
             <a href="">Payment</a>
             <a href="">Location</a>
+            <div>
+              <button className='h-[3rem]  ml-[3rem] bg-[orange] mt-[2.5rem] mb-[1rem] w-[10rem]  rounded-3xl sm:ml-[0.2rem] sm:w-[8rem]  '>Contact Us</button>
+            </div>
           </div>
-          <div>
-            <button className='h-[3rem]  ml-[3rem] bg-[orange] mt-[3.4rem] mb-[1rem] w-[10rem]  rounded-3xl  '>Contact Us</button>
-          </div>
+
         </nav>
         <div className="justify-center text-center mt-[3rem] h-[50rem]">
-          <h2 className='text-8xl font-Josefin Sans font-semibold'>Hello, Welcome To</h2>
-          <h1 className='text-8xl font-bold mt-[1rem]'>SNOWDEV</h1>
-          <p className='w-[70rem] ml-[9rem] text-[grey] font-medium mt-[2rem] text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur cum accusamus.🤪 Fuga quo aliquid dolor repudiandae assumenda reprehenderit nesciunt magni est. Non pariatur 🥰 vero perspiciatis ipsa voluptatum mollitia eligendi!
-            Culpa illo 🥰repellendus facilis vel dolorum adipisci quas ut, mollitia eligendi voluptate. Ea accusantium numquam tenetur aliquid deleniti, aut ipsum ullam assumenda hic quibusdam maxime.🥰 Dolore deleniti suscipit fuga pariatur.</p>
-          <div className="flex justify-center gap-[8rem] mt-[3rem]">
-            <img className='w-[20rem] rounded-r-3xl rounded-b-3xl rounded-t-3xl border-[0.5rem] border-indigo-500' src={Programmer} alt="" />
-            <img className='w-[20rem] rounded-r-3xl rounded-b-3xl rounded-t-3xl border-[0.5rem] border-indigo-500' src={Codeset} alt="" />
-            <img className='w-[20rem] rounded-r-3xl rounded-b-3xl rounded-t-3xl border-[0.5rem] border-indigo-500' src={Macset} alt="" />
+          <h2 className='text-8xl font-Josefin Sans font-semibold sm:text-3xl sm:pr-[2rem]'>Hello, Welcome To</h2>
+          <h1 className='text-8xl font-bold mt-[1rem] sm:text-6xl sm:pr-[2rem]'>SNOWDEV</h1>
+          <p className='w-[70rem] ml-[9rem] text-[grey] font-medium mt-[2rem] text-xl sm:w-[25rem] sm:ml-[0.5rem] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur cum accusamus.🤪 Fuga quo aliquid dolor repudiandae assumenda reprehenderit nesciunt magni est. Non pariatur 🥰 vero perspiciatis ipsa voluptatum mollitia eligendi!
+            Culpa illo 🥰repellendus facilis vel dolorum adipisci quas ut</p>
+          <div className="flex justify-center gap-[8rem] mt-[3rem] sm:flex sm:flex-col">
+            <img className='w-[20rem] rounded-r-3xl rounded-b-3xl rounded-t-3xl border-[0.5rem] border-indigo-500 sm:w-[20rem] sm:h-[13rem] sm:ml-[3rem] sm:mt-[3rem]' src={Programmer} alt="" />
+            <img className='w-[20rem] rounded-r-3xl rounded-b-3xl rounded-t-3xl border-[0.5rem] border-indigo-500 sm:hidden' src={Codeset} alt="" />
+            <img className='w-[20rem] rounded-r-3xl rounded-b-3xl rounded-t-3xl border-[0.5rem] border-indigo-500 sm:hidden'  src={Macset} alt="" />
           </div>
         </div>
 
       </div>
       <div className=" mt-[5rem]">
-        <h3 className='text-4xl text-center font-Josefin Sans font-semibold mt-[2rem]'>My Experties</h3>
-        <p className='text-3xl text-center  font-bold'>We deliver Top Notch In Any Of This Range</p>
+        <h3 className='text-4xl text-center font-Josefin Sans font-semibold mt-[2rem] sm:text-3xl'>My Experties</h3>
+        <p className='text-3xl text-center font-bold sm:text-2xl sm:w-[25rem]'>We deliver Top Notch In Any Of This Range</p>
         <div className="flex divide-x-4 mt-[2rem]">
 
-          <div onClick={ToggleWeb} className=" flex ml-[5rem] mt-[rem] cursor-pointer   w-[35rem] rounded-full bg-[whitesmoke] h-[10rem] pl-[3rem] pt-[0.5rem]">
+          <div onClick={ToggleWeb} className=" flex ml-[5rem] mt-[rem] cursor-pointer w-[35rem] rounded-full bg-[whitesmoke] h-[10rem] pl-[3rem] pt-[0.5rem]">
             <div className="bg-[grey] w-[7rem] pl-[2rem] h-[7rem] pt-[2rem] rounded-full mt-[1rem]">
               <img className='w-[3rem] ' src={Service} alt="" />
             </div>
@@ -80,35 +81,39 @@ const Home = () => {
                   <div className="bg-[white] shadow-2xl w-[50rem] h-[20rem] rounded-md mt-[10rem] text-2xl font-semibold pt-[3rem] text-center">
                     <p>Web Development</p>
                     <p className='pt-[2rem]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reprehenderit atque nulla eum dicta aliquam cupiditate vel impedit minima. Animi illo corrupti enim, excepturi a voluptatem porro nesciunt perspiciatis accusantium.</p>
-                     
+
                   </div>
                 </div>
               )
             }
           </div>
-          <div className="">
-            <div onClick={Toggleweb2} className="flex ml-[4rem] w-[34rem] bg-[wheat]  rounded-full h-[10rem] pl-[3rem] pt-[0.5rem]">
+
+          <div onClick={Toggleweb2} className="">
+            <div className="flex ml-[4rem] w-[34rem] bg-[wheat] cursor-pointer rounded-full h-[10rem] pl-[3rem] pt-[0.5rem]">
               <div className="bg-[grey] w-[7rem] pl-[2rem] h-[7rem] pt-[2rem] rounded-full mt-[1rem]">
-                <img className='w-[3rem] 'src={App} alt="" />
+                <img className='w-[3rem] ' src={App} alt="" />
               </div>
               <div className="mt-[1rem] pl-[1rem]">
                 <h4 className='text-2xl font-semibold pt-[0.5rem] text-[grey]'>App Management</h4>
                 <p className='text-2xl w-[23rem] '>We have experts ready to make best mobile apps 🙃.</p>
               </div>
-              {
-                Togglemodal2 && (
-                  <div className="fixed top-0 backdrop-blur-md h-full justify-center">
-                    <div className="bg-[white] shadow-2xl w-[50rem] h-[20rem] rounded-md mt-[10rem] text-2xl font-semibold pt-[3rem] text-center">
-                          <p>App Management</p>
-                          <p className='pt-[2rem]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque rem quo modi ipsam deserunt, quisquam voluptatem ipsum similique voluptatum, commodi voluptates nam voluptas possimus, natus deleniti. Consequuntur numquam beatae magni!</p>
-                    </div>
-                     
-                  </div>
-                )
-              }
+
             </div>
           </div>
+          {
+            Togglemodal2 && (
+              <div className="fixed top-0 w-full backdrop-blur-md h-full justify-center ">
+                <div className="bg-[white] shadow-2xl w-[50rem] h-[20rem] rounded-md mt-[10rem] text-2xl font-semibold pt-[3rem] text-center ml-[15rem]">
+                  <p>App Management</p>
+                  <p className='pt-[2rem]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque rem quo modi ipsam deserunt, quisquam voluptatem ipsum similique voluptatum, commodi voluptates nam voluptas possimus, natus deleniti. Consequuntur numquam beatae magni!</p>
+                </div>
+
+              </div>
+            )
+          }
         </div>
+
+
         <hr className='mt-[3rem] w-[75rem] ml-[5rem] h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700' />
         <div className="text-center text-3xl  font-semibold">
           <h5>A creative thinker and problem solver, ready to help your company succeed</h5>
@@ -137,7 +142,6 @@ const Home = () => {
           <img className=' ' src={Tastimonials} alt="" />
         </div>
       </div>
-
 
 
     </div>

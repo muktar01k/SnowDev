@@ -10,6 +10,9 @@ export default {
         'image': "url('/src/assets/wallpapper.png')"
      }
     },
+    screens:{
+      "sm":"414px"
+    }
   },
   plugins: [],
 }
