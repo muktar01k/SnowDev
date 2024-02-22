@@ -11,8 +11,10 @@ export default {
      }
     },
     screens:{
-      "sm":"414px"
-    }
+      "sm":"414px",
+      "lg":"2080px"
+    },
+    
   },
   plugins: [],
 }
