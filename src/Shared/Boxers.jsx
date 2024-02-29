@@ -1,16 +1,14 @@
 
-
-
 export const DivCard = ({ words1, words2 }) => {
 
     return (
-        <div className="bg-[red] flex justfy-center ml-[5rem] sm:ml-[2.3rem] mt-[2rem] cursor-pointer w-[35rem] sm:w-[22rem]  sm:h-[20rem] rounded-xl   h-[10rem]  pt-[0.5rem] sm:shadow-lg sm:shadow-[#e9eefc] md:w-[22rem] md:ml-[2rem] md:h-[22rem]">
+        <div className="bg-[red] flex justfy-center ml-[5rem] sm:ml-[2rem] mt-[2rem] cursor-pointer w-[35rem] sm:w-[22rem] smxx:w-[20rem] smxx:ml-[1rem]  sm:h-[20rem] rounded-xl   h-[10rem]  pt-[0.5rem] sm:shadow-lg sm:shadow-[#e9eefc] md:w-[22rem] md:ml-[2rem] md:h-[22rem]">
             {/* <div className="bg-[grey] w-[7rem] pl-[2rem] h-[7rem] pt-[2rem] rounded-full mt-[1rem] sm:hidden">
                     <img className='w-[3rem]' src={Service} alt="" />
             </div> */}
             <div className="mt-[1rem] sm:pl-[1rem] md:pl-[1rem] ">
                 <h4 className='text-3xl font-semibold pl-[2rem] text-[grey] md:pl-[2rem] '>{words1}</h4>
-                <p className='text-2xl w-[23rem] sm:w-[20rem] sm:pl-[2rem] sm:pt-[1rem] md:w-[17rem] md:pl-[3rem] '>{words2}</p>
+                <p className='text-2xl w-[23rem] sm:w-[20rem] sm:pl-[2rem] sm:pt-[1rem] md:w-[17rem] md:pl-[3rem]'>{words2}</p>
                 <button className="sm:mt-[2rem] md:mt-[3rem] sm:ml-[5rem] bg-[yellow] sm:w-[10rem] sm:h-[3rem] rounded-full animate-bounce md:h-[4rem] md:w-[11rem] md:ml-[5rem]">Contact us &#8594;</button>
             </div>
         </div> 

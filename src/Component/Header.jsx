@@ -22,17 +22,17 @@ const Header = () => {
 
         <div className="">
             <div className='bg-[#ebf9ff]'>
-                <nav className=' flex  gap-[5rem]  md:gap-[25rem]'>
+                <nav className=' flex  gap-[5rem]  md:gap-[25rem] smxx:gap-[3rem]'>
                     <div className='w-[7rem] mt-[1rem] sm:mt-[2rem] w-[7rem] ml-[1rem]  h-[7rem] md:w-[10rem] '>
                         <img className='' src={Logo} alt="" />
                     </div>
                     <div className=' '>
-                        <div onClick={Hamburger} className="w-[2rem] h-[3rem] ml-[8rem] mt-[4rem] bg-[red] p-0 md:w-[3rem]">
-                            <img src={Wall} alt="" />
+                        <div onClick={Hamburger} className="w-[2rem] h-[3rem] ml-[8rem] mt-[4rem]  p-0 md:w-[3rem] ">
+                            <img className='mdx:hidden' src={Wall} alt="" />
                         </div>
                         {toggleham && (
-                            <div className="sm:absolute mt-[2rem]  ">
-                                <div className='text-xl pt-[3rem] text-lg   text-[grey] sm:flex sm:flex-col sm:gap-[1rem] bg-[white] sm:rounded-xl sm:w-[20rem]'>
+                            <div className="sm:absolute mt-[2rem] mdx:w-[10rem] ">
+                                <div className='text-xl pt-[3rem] text-lg   text-[grey] sm:flex sm:flex-col sm:gap-[1rem] bg-[white] sm:rounded-xl sm:w-[20rem]  '>
                                     {
                                         NavDetails.map((NavDetail) => (<Details {...NavDetail} />))
                                     }

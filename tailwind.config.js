@@ -12,7 +12,10 @@ export default {
     },
     screens:{
       "sm":{"min":"310px", "max":"500px"},
-      "md":{"min":"768px", "max":"1000px"}
+      "smx":"390px",
+      "smxx":"360px",
+      "md":{"min":"768px", "max":"1000px"},
+      "mdx":{"min":"1001px","max":"1500px"}
     },
     // animation:{
     //   "bounce":bo

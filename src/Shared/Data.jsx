@@ -54,7 +54,16 @@ export const Afcons = [
     //     head2:"I'm a professional with a home base in Africa, but my work takes me all over the continent. I love exploring different cultures and collaborating with people from all walks of life. Whether I'm working in a bustling city or a remote village, I'm always inspired by the people I meet and the ideas we create together."
     // }
 ]
-
+export const Oranges = [
+    {
+       Address1:"Address:",
+       Address2:"Lagos state, Nigeria",
+        Address3:"Email:",
+        Address4:"snowdev@gmail.com",
+        Address5:"Contact:",
+        Address6:"+2349132630151"
+    }
+]
 
 
 
