@@ -74,16 +74,16 @@ const Middle = () => {
 
                 {/* </div> */}
 
-                <hr className='mt-[3rem] w-[23rem] ml-[1rem] h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700' />
-                <div className="text-center text-3xl  font-semibold">
-                    <h5>A creative thinker and problem solver, ready to help your company succeed</h5>
-                    <p className='ml-[3rem] text-[grey] font-medium mt-[2rem] text-xl w-[20rem]'>I'm a creative thinker with a knack for solving problems. I'm passionate about helping businesses achieve their goals through innovative solutions. I'm skilled in finding new and creative ways to solve complex problems, and I love bringing ideas to life. I'm eager to work with businesses that are ready to take their company to the next level. If you're looking for someone who can help you reach your goals, I'm here to help</p>
-                    <div className="flex justify-center mt-[2rem] mr-[1rem]">
+                <hr className='mt-[3rem] w-[23rem] ml-[1rem] h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700 md:w-[39rem] md:ml-[5rem]' />
+                <div >
+                    <h5 className="text-center text-3xl  font-semibold md:text-4xl md:w-[49rem] md:pl-[3rem]">A creative thinker and problem solver, ready to help your company succeed</h5>
+                    <p className=' md:ml-[1rem] sm:ml-[1rem] text-[grey] font-medium mt-[2rem] text-xl sm:w-[25rem] md:w-[49rem] '>I'm a creative thinker with a knack for solving problems. I'm passionate about helping businesses achieve their goals through innovative solutions. I'm skilled in finding new and creative ways to solve complex problems, and I love bringing ideas to life. I'm eager to work with businesses that are ready to take their company to the next level. If you're looking for someone who can help you reach your goals, I'm here to help</p>
+                    <div className="flex justify-center mt-[2rem] mr-[1rem] md:gap-[4rem]">
                         <img className='w-[15rem]' src={Head} alt="" />
                         <img className='w-[15rem] ' src={Light} alt="" />
-                        <img className='w-[15rem] sm:hidden' src={Head3} alt="" />
-                        <img className='w-[15rem] sm:hidden' src={Think} alt="" />
-                        <img className='w-[15rem] sm:hidden' src={Head2} alt="" />
+                        <img className='w-[15rem] sm:hidden md:w-[15rem]' src={Head3} alt="" />
+                        <img className='w-[15rem] sm:hidden md:hidden' src={Think} alt="" />
+                        <img className='w-[15rem] sm:hidden md:hidden' src={Head2} alt="" />
                     </div>
                 </div>
             </div>

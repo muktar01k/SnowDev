@@ -22,12 +22,12 @@ const Header = () => {
 
         <div className="">
             <div className='bg-[#ebf9ff]'>
-                <nav className=' flex  w-full sm:gap-[5rem] '>
-                    <div className='w-[7rem] mt-[1rem] sm:mt-[2rem] sm:w-[7rem] sm:ml-[1rem]  sm:h-[7rem]'>
+                <nav className=' flex  gap-[5rem]  md:gap-[25rem]'>
+                    <div className='w-[7rem] mt-[1rem] sm:mt-[2rem] w-[7rem] ml-[1rem]  h-[7rem] md:w-[10rem] '>
                         <img className='' src={Logo} alt="" />
                     </div>
                     <div className=' '>
-                        <div onClick={Hamburger} className="w-[2rem] h-[3rem] ml-[8rem] mt-[4rem]  sm:p-0">
+                        <div onClick={Hamburger} className="w-[2rem] h-[3rem] ml-[8rem] mt-[4rem] bg-[red] p-0 md:w-[3rem]">
                             <img src={Wall} alt="" />
                         </div>
                         {toggleham && (

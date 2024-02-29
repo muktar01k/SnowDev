@@ -11,10 +11,12 @@ export default {
      }
     },
     screens:{
-      "sm":"414px",
-      "lg":"2080px"
+      "sm":{"min":"310px", "max":"500px"},
+      "md":{"min":"768px", "max":"1000px"}
     },
-    
+    // animation:{
+    //   "bounce":bo
+    // }
   },
   plugins: [],
 }
