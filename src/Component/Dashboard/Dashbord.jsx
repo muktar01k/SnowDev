@@ -1,10 +1,10 @@
 
 
 
-import Downpart from "./Downpart.jsx"
-import { Futter } from "./Footer.jsx"
-import Header from "./Header.jsx"
-import Middle from "./Middle.jsx"
+import Downpart from "../Downpart.jsx"
+import { Futter } from "../Footer.jsx"
+import Header from "../Header.jsx"
+import Middle from "../Middle.jsx"
 
 
 
